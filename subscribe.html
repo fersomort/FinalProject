@@ -1,10 +1,10 @@
-<!-- DEVELOPER: Fer Somohano, IS117-xxx, Fall 2025 -->
+<!-- DEVELOPER: Fernanda Somohano, IS117-001, Fall 2025 -->
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact — Women's Football Scores</title>
+    <title>Subscribe — Women's Football Scores</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,16 +16,16 @@
             <img src="img/logo.svg" alt="Women's Football Scores logo" width="36" height="36" class="me-2">
             <span>Women's Football Scores</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContact" aria-controls="navContact" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navSub" aria-controls="navSub" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navContact">
+        <div class="collapse navbar-collapse" id="navSub">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="leaguesDropContact" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leagues</a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="leaguesDropContact">
+                    <a class="nav-link dropdown-toggle" href="#" id="leaguesDropSub" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leagues</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="leaguesDropSub">
                         <li><a class="dropdown-item" href="champions-league.html">UEFA Women's Champions League</a></li>
                         <li><a class="dropdown-item" href="liga-f.html">Liga F</a></li>
                         <li><a class="dropdown-item" href="wsl.html">WSL</a></li>
@@ -36,7 +36,7 @@
 
                 <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+               <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
             </ul>
         </div>
     </div>
@@ -44,137 +44,210 @@
 
 <main class="container my-5">
     <header class="mb-4">
-        <h1 class="h3 text-white">Contact Us</h1>
-        <p class="text-muted">Send us your suggestions, feedback, or report any issues with the site.</p>
+        <h1 class="h3 text-white">Subscribe to Match Alerts</h1>
+        <p class="text-muted">Get notified about upcoming matches, goals, and important moments from your favorite teams and leagues.</p>
     </header>
 
     <div class="row">
-        <div class="col-md-6">
-            <!-- Contact Form -->
+        <div class="col-lg-8">
+            <!-- Subscription Form -->
             <div class="card card-dark">
                 <div class="card-body">
-                    <h5 class="card-title">Send us a message</h5>
+                    <h5 class="card-title">Customize Your Alerts</h5>
+                    <p class="text-muted small">Select your preferences below</p>
 
-                    <form id="contactForm">
+                    <form id="subscribeForm">
+                        <!-- Personal Information -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="sname" class="form-label">Name <span class="text-danger">*</span></label>
+                                <input
+                                        id="sname"
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Your full name"
+                                        required
+                                        autocomplete="name">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="semail" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input
+                                        id="semail"
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="your.email@example.com"
+                                        required
+                                        autocomplete="email">
+                            </div>
+                        </div>
+
+                        <!-- League Selection -->
                         <div class="mb-3">
-                            <label class="form-label" for="cname">Name <span class="text-danger">*</span></label>
+                            <label class="form-label" for="sleagues">Your Leagues <span class="text-danger">*</span></label>
+                            <select id="sleagues" class="form-select" multiple size="5" required>
+                                <option value="uwcl">UEFA Women's Champions League</option>
+                                <option value="ligaf">Liga F</option>
+                                <option value="wsl">WSL</option>
+                                <option value="ligamx">Liga MX Femenil</option>
+                                <option value="nwsl">NWSL</option>
+                            </select>
+                            <small class="text-muted">Hold Ctrl (or Cmd on Mac) to select multiple leagues</small>
+                        </div>
+
+                        <!-- Favorite Team (Optional) -->
+                        <div class="mb-3">
+                            <label for="steam" class="form-label">Favorite Team (Optional)</label>
                             <input
-                                    id="cname"
+                                    id="steam"
                                     type="text"
                                     class="form-control"
-                                    placeholder="Your full name"
-                                    required
-                                    autocomplete="name">
+                                    placeholder="e.g., FC Barcelona, Chelsea, Tigres UANL">
+                            <small class="text-muted">Get priority alerts for your favorite team</small>
                         </div>
 
+                        <!-- Notification Preferences -->
                         <div class="mb-3">
-                            <label class="form-label" for="cemail">Email <span class="text-danger">*</span></label>
-                            <input
-                                    id="cemail"
-                                    type="email"
-                                    class="form-control"
-                                    placeholder="your.email@example.com"
-                                    required
-                                    autocomplete="email">
+                            <label class="form-label d-block">Notification Types</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="notifGoals" checked>
+                                <label class="form-check-label" for="notifGoals">
+                                    Goals & Match Highlights
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="notifCards">
+                                <label class="form-check-label" for="notifCards">
+                                    Red Cards & Major Incidents
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="notifKickoff" checked>
+                                <label class="form-check-label" for="notifKickoff">
+                                    Match Kickoff Reminders
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="notifResults" checked>
+                                <label class="form-check-label" for="notifResults">
+                                    Final Match Results
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="notifStandings">
+                                <label class="form-check-label" for="notifStandings">
+                                    Weekly Standings Updates
+                                </label>
+                            </div>
                         </div>
 
+                        <!-- Notification Frequency -->
                         <div class="mb-3">
-                            <label class="form-label" for="csubject">Subject</label>
-                            <select id="csubject" class="form-select">
-                                <option value="general">General Inquiry</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="bug">Report a Bug</option>
-                                <option value="suggestion">Suggestion</option>
-                                <option value="other">Other</option>
-                            </select>
+                            <label class="form-label">Email Frequency</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frequency" id="freqInstant" value="instant" checked>
+                                <label class="form-check-label" for="freqInstant">
+                                    Instant (as events happen)
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frequency" id="freqDaily" value="daily">
+                                <label class="form-check-label" for="freqDaily">
+                                    Daily Digest (once per day)
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="frequency" id="freqWeekly" value="weekly">
+                                <label class="form-check-label" for="freqWeekly">
+                                    Weekly Summary (every Monday)
+                                </label>
+                            </div>
                         </div>
 
+                        <!-- Terms Agreement -->
                         <div class="mb-3">
-                            <label class="form-label" for="cmsg">Message <span class="text-danger">*</span></label>
-                            <textarea
-                                    id="cmsg"
-                                    class="form-control"
-                                    rows="6"
-                                    placeholder="Tell us what's on your mind..."
-                                    required></textarea>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                <label class="form-check-label" for="agreeTerms">
+                                    I agree to receive emails and understand this is a demo<span class="text-danger">*</span>
+                                </label>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">
-                            Send Message
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            Subscribe to Alerts
                         </button>
 
                         <!-- Success Message -->
-                        <div id="contactMsg" class="alert alert-success mt-3 d-none" role="alert">
-                            Thank you for your message! We'll get back to you soon.
+                        <div id="subscribeMsg" class="alert alert-success mt-3 d-none" role="alert">
+                            Thank you for subscribing! Check your email for confirmation.
                         </div>
                     </form>
                 </div>
             </div>
         </div>
 
-        <aside class="col-md-6">
-            <!-- Developer Contact Info -->
+        <aside class="col-lg-4">
+            <!-- Benefits -->
             <div class="card card-dark mb-4">
                 <div class="card-body">
-                    <h5 class="card-title">Developer Information</h5>
-                    <p class="text-white"><strong>Fer Somohano</strong></p>
-                    <p class="text-muted mb-2">IS117-xxx, Fall 2025</p>
-                    <p class="text-muted mb-2">New Jersey Institute of Technology</p>
+                    <h5 class="card-title">Why Subscribe?</h5>
+                    <ul class="text-white">
+                        <li class="mb-2">Never miss a match from your favorite teams</li>
+                        <li class="mb-2">Get instant goal notifications</li>
+                        <li class="mb-2">Stay updated on league standings</li>
+                        <li class="mb-2">Receive exclusive match analysis</li>
+                        <li class="mb-2">Customize alerts to your preferences</li>
+                    </ul>
+                    <p class="text-muted small mt-3">All notifications are free and you can unsubscribe at any time.</p>
+                </div>
+            </div>
 
-                    <hr class="bg-secondary my-3">
+            <!-- Privacy Notice -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Privacy & Data</h5>
+                    <p class="text-white">Your email address will be used only for match notifications and updates.</p>
+                    <p class="text-muted small">We will never share your information with third parties. You can unsubscribe at any time by clicking the link in any email we send.</p>
+                    <p class="text-muted small"><strong>Note:</strong> This is a demo. No actual emails will be sent and no data is stored.</p>
+                </div>
+            </div>
 
-                    <div class="mb-3">
-                        <p class="text-white mb-1"><strong>Email:</strong></p>
-                        <p class="text-muted">
-                            <a class="footer-link" href="mailto:fer@example.com">fer@example.com</a>
-                        </p>
-                    </div>
-
-                    <div class="mb-3">
-                        <p class="text-white mb-1"><strong>Course:</strong></p>
-                        <p class="text-muted">IS117 - Introduction to Website Development</p>
-                    </div>
-
-                    <div class="mb-3">
-                        <p class="text-white mb-1"><strong>Project:</strong></p>
-                        <p class="text-muted">Women's Football Scores Platform</p>
+            <!-- Featured Leagues -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Featured Competitions</h5>
+                    <div class="list-group list-group-flush">
+                        <a href="champions-league.html" class="list-group-item list-group-item-action bg-transparent text-white border-0">
+                            <strong>UEFA Women's Champions League</strong>
+                            <p class="text-muted small mb-0">Europe's premier club competition</p>
+                        </a>
+                        <a href="liga-f.html" class="list-group-item list-group-item-action bg-transparent text-white border-0">
+                            <strong>Liga F</strong>
+                            <p class="text-muted small mb-0">Spain's top women's league</p>
+                        </a>
+                        <a href="wsl.html" class="list-group-item list-group-item-action bg-transparent text-white border-0">
+                            <strong>Women's Super League</strong>
+                            <p class="text-muted small mb-0">England's elite division</p>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- FAQ Section -->
-            <div class="card card-dark mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Frequently Asked Questions</h5>
-
-                    <div class="mb-3">
-                        <p class="text-white fw-semibold mb-1">Is this site showing live data?</p>
-                        <p class="text-muted small">No, this is an educational project with manually curated data for demonstration purposes.</p>
-                    </div>
-
-                    <div class="mb-3">
-                        <p class="text-white fw-semibold mb-1">Can I subscribe to real match alerts?</p>
-                        <p class="text-muted small">The subscription feature is a demo and does not send actual emails.</p>
-                    </div>
-
-                    <div class="mb-3">
-                        <p class="text-white fw-semibold mb-1">Where does the data come from?</p>
-                        <p class="text-muted small">Data is sourced from official league websites (UEFA, LaLiga, The FA, Liga MX, NWSL) and ESPN.</p>
-                    </div>
-
-                    <div class="mb-3">
-                        <p class="text-white fw-semibold mb-1">How can I report an error?</p>
-                        <p class="text-muted small">Please use the contact form and select "Report a Bug" from the subject dropdown.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Info -->
+            <!-- Support Info -->
             <div class="card card-dark">
                 <div class="card-body">
-                    <h5 class="card-title">Response Time</h5>
-                    <p class="text-white">This is a student project for educational purposes.</p>
-                    <p class="text-muted small">As this is a demonstration site, form submissions are not actually sent. The contact form showcases form design and validation techniques learned in IS117.</p>
+                    <h5 class="card-title">Need Help?</h5>
+                    <p class="text-white">Questions about subscriptions?</p>
+                    <a href="contact.html" class="btn btn-outline-primary w-100">Contact Support</a>
                 </div>
             </div>
         </aside>
@@ -207,7 +280,7 @@
             </div>
         </div>
         <div class="text-center mt-3 small">
-            &copy; 2025 Fer Somohano • IS117 Educational Project
+            &copy; 2025 Fernanda Somohano • IS117 Fall 2025
         </div>
     </div>
 </footer>
