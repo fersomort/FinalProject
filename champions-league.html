@@ -1,0 +1,343 @@
+<!-- DEVELOPER: Fer Somohano, IS117-xxx, Fall 2025 -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UEFA Women's Champions League — Women's Football Scores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="interior">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gradient">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.svg" alt="Women's Football Scores logo" width="36" height="36" class="me-2">
+            <span>Women's Football Scores</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCL" aria-controls="navCL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navCL">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="leaguesDropCL" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leagues</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="leaguesDropCL">
+                        <li><a class="dropdown-item" href="champions-league.html">UEFA Women's Champions League</a></li>
+                        <li><a class="dropdown-item" href="liga-f.html">Liga F</a></li>
+                        <li><a class="dropdown-item" href="wsl.html">WSL</a></li>
+                        <li><a class="dropdown-item" href="liga-mx-femenil.html">Liga MX Femenil</a></li>
+                        <li><a class="dropdown-item" href="nwsl.html">NWSL</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <!-- League Hero Image -->
+    <div class="mb-4">
+        <img src="img/card-uwcl.jpg" class="img-fluid rounded" alt="UEFA Women's Champions League" style="width: 100%; max-height: 300px; object-fit: cover;">
+    </div>
+
+    <header class="mb-4">
+        <h1 class="h3 text-white">UEFA Women's Champions League</h1>
+        <p class="text-muted">League-phase standings and upcoming fixtures (latest update: Nov 25, 2025).</p>
+    </header>
+
+    <section class="row">
+        <div class="col-lg-8">
+            <!-- Fixtures -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming fixtures (next round)</h5>
+                    <p class="text-muted small">All kickoff times shown in EST (UTC−05:00).</p>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/barcelona.png" alt="Barcelona logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">FC Barcelona Femení vs Benfica <img src="img/benfica.png" alt="Benfica logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Wed, Dec 10, 2025 • 12:45 PM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/chelsea.png" alt="Chelsea logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Chelsea WFC vs VfL Wolfsburg <img src="img/wolfsburg.png" alt="Wolfsburg logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Wed, Dec 17, 2025 • 3:00 PM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/man-city.png" alt="Man City logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Manchester City WFC vs Paris Saint-Germain <img src="img/psg.png" alt="PSG logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Wed, Dec 10, 2025 • 7:30 PM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/lyon.png" alt="Lyon logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Olympique Lyonnais Féminin vs AS Roma <img src="img/roma.png" alt="Roma logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Thu, Dec 11, 2025 • 1:00 PM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted mt-3">Fixture sources: UEFA official site. Verify exact kickoff times before match day.</p>
+                </div>
+            </div>
+
+            <!-- Recent Results -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Results</h5>
+                    <p class="text-muted small">Latest completed matches from the group stage</p>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/arsenal.png" alt="Arsenal logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Arsenal WFC <span class="text-muted">vs</span> Olympique Lyonnais Féminin <img src="img/lyon.png" alt="Lyon logo" width="30" height="30"></div>
+                                        <div class="small text-muted">Nov 19, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-end me-2">
+                                        <div class="fs-5"><strong>2</strong> <span class="mx-1">—</span> <strong>2</strong></div>
+                                        <div class="small text-muted">FT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/chelsea.png" alt="Chelsea logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Chelsea WFC <span class="text-muted">vs</span> VfL Wolfsburg <img src="img/wolfsburg.png" alt="Wolfsburg logo" width="30" height="30"></div>
+                                        <div class="small text-muted">Nov 22, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-end me-2">
+                                        <div class="fs-5"><strong>1</strong> <span class="mx-1">—</span> <strong>3</strong></div>
+                                        <div class="small text-muted">FT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights / news -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Latest highlights</h5>
+                    <p class="text-muted">The group stage is heating up with Barcelona maintaining their perfect record. Lyon and Wolfsburg are also performing strongly in the competition.</p>
+                    <p class="text-muted">Arsenal's draw with Lyon showcased excellent attacking football from both sides, while Chelsea's loss to Wolfsburg was a surprise result in Group A.</p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="col-lg-4">
+            <!-- Standings -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h6 class="card-title">Champions League Standings (Top Teams)</h6>
+                    <p class="text-muted small">Group phase snapshot — updated Nov 25, 2025</p>
+
+                    <table class="table table-sm table-dark table-striped text-white">
+                        <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Team</th>
+                            <th>Pld</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>Pts</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>FC Barcelona Femení</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>18</td>
+                            <td>2</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Olympique Lyonnais Féminin</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>VfL Wolfsburg</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Bayern Munich Women</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Chelsea WFC</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>10</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Arsenal WFC</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>4</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p class="small text-muted">Full table & fixtures: <a class="footer-link" href="https://www.uefa.com/womenschampionsleague/fixtures-results/" target="_blank" rel="noopener">UEFA.com</a></p>
+                </div>
+            </div>
+
+            <!-- Top Scorers -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h6 class="card-title">Top Scorers</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Alessia Russo (Arsenal)</span>
+                                <strong>4</strong>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Caroline Weir (Real Madrid)</span>
+                                <strong>4</strong>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Lineth Beerensteyn (Wolfsburg)</span>
+                                <strong>4</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </section>
+</main>
+
+<footer class="site-footer text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href="index.html" class="footer-brand text-white text-decoration-none d-flex align-items-center">
+                    <img src="img/logo.svg" alt="Women's Football Scores logo" width="28" height="28" class="me-2">Women's Football Scores
+                </a>
+                <p class="small mt-2">Manually curated match data and league standings.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6>Quick links</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="subscribe.html">Subscribe</a></li>
+                    <li><a class="footer-link" href="contact.html">Contact</a></li>
+                    <li><a class="footer-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6>Legal</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Terms of Use</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3 small">
+            &copy; 2025 Fernanda Somohano • Data: UEFA / ESPN / Fotmob
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

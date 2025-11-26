@@ -1,0 +1,437 @@
+<!-- DEVELOPER: Fer Somohano, IS117-xxx, Fall 2025 -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WSL — Women's Football Scores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="interior">
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gradient">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.svg" alt="Women's Football Scores logo" width="36" height="36" class="me-2">
+            <span>Women's Football Scores</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navWSL" aria-controls="navWSL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navWSL">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="leaguesDropWSL" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leagues</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="leaguesDropWSL">
+                        <li><a class="dropdown-item" href="champions-league.html">UEFA Women's Champions League</a></li>
+                        <li><a class="dropdown-item" href="liga-f.html">Liga F</a></li>
+                        <li><a class="dropdown-item" href="wsl.html">WSL</a></li>
+                        <li><a class="dropdown-item" href="liga-mx-femenil.html">Liga MX Femenil</a></li>
+                        <li><a class="dropdown-item" href="nwsl.html">NWSL</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <!-- League Hero Image -->
+    <div class="mb-4">
+        <img src="img/card-wsl.jpg" class="img-fluid rounded" alt="Women's Super League" style="width: 100%; max-height: 300px; object-fit: cover;">
+    </div>
+
+    <header class="mb-4">
+        <h1 class="h3 text-white">Barclays WSL</h1>
+        <p class="text-muted">Current table and upcoming fixtures (snapshot: Nov 25, 2025).</p>
+    </header>
+
+    <section class="row">
+        <div class="col-lg-8">
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Next fixtures (selected)</h5>
+                    <p class="text-muted small">Times in EST (UTC−05:00)</p>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/man-city.png" alt="Man City logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Manchester City WFC vs Liverpool FC Women <img src="img/liverpool.png" alt="Liverpool logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Mon, Nov 25, 2025 • 4:30 PM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/chelsea.png" alt="Chelsea logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Chelsea FC Women vs Arsenal WFC <img src="img/arsenal.png" alt="Arsenal logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Sun, Nov 30, 2025 • 3:00 PM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/man-united.png" alt="Man United logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Manchester United Women vs Tottenham Hotspur Women <img src="img/tottenham.png" alt="Tottenham logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Sat, Nov 29, 2025 • 11:00 AM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1">
+                                    <img src="img/brighton.png" alt="Brighton logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Brighton & Hove Albion Women vs West Ham United Women <img src="img/west-ham.png" alt="West Ham logo" width="30" height="30" class="ms-2"></div>
+                                        <div class="small text-muted">Sun, Dec 1, 2025 • 9:30 AM EST</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted mt-3">Source: WSL fixture list / ESPN schedule. Always verify match times with official WSL site before publication.</p>
+                </div>
+            </div>
+
+            <!-- Recent Results -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Results</h5>
+                    <p class="text-muted small">Latest completed matches from Week 9</p>
+
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/chelsea.png" alt="Chelsea logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Chelsea FC Women <span class="text-muted">vs</span> Arsenal WFC <img src="img/arsenal.png" alt="Arsenal logo" width="30" height="30"></div>
+                                        <div class="small text-muted">Nov 23, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-end me-2">
+                                        <div class="fs-5"><strong>0</strong> <span class="mx-1">—</span> <strong>1</strong></div>
+                                        <div class="small text-muted">FT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/man-city.png" alt="Man City logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Manchester City WFC <span class="text-muted">vs</span> Brighton & Hove Albion Women <img src="img/brighton.png" alt="Brighton logo" width="30" height="30"></div>
+                                        <div class="small text-muted">Nov 22, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-end me-2">
+                                        <div class="fs-5"><strong>2</strong> <span class="mx-1">—</span> <strong>0</strong></div>
+                                        <div class="small text-muted">FT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/man-united.png" alt="Man United logo" width="30" height="30" class="me-2">
+                                    <div>
+                                        <div class="fw-semibold">Manchester United Women <span class="text-muted">vs</span> Liverpool FC Women <img src="img/liverpool.png" alt="Liverpool logo" width="30" height="30"></div>
+                                        <div class="small text-muted">Nov 24, 2025</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-end me-2">
+                                        <div class="fs-5"><strong>3</strong> <span class="mx-1">—</span> <strong>1</strong></div>
+                                        <div class="small text-muted">FT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- League News -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">League Highlights</h5>
+                    <p class="text-muted">Manchester City continues to lead the WSL with an impressive unbeaten run. Their defensive record has been particularly strong, conceding just 9 goals in 9 matches.</p>
+                    <p class="text-muted">Arsenal's win over Chelsea was a crucial result in the race for Champions League qualification. The Gunners are finding form at the right time as the season progresses.</p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="col-lg-4">
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h6 class="card-title">WSL Standings (Top 12)</h6>
+                    <p class="text-muted small">Snapshot Nov 25, 2025 (official WSL table)</p>
+
+                    <table class="table table-sm table-dark table-striped text-white">
+                        <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Team</th>
+                            <th>Pld</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Manchester City</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>23</td>
+                            <td>9</td>
+                            <td>+14</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Chelsea</td>
+                            <td>9</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>16</td>
+                            <td>5</td>
+                            <td>+11</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Manchester United</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>19</td>
+                            <td>9</td>
+                            <td>+10</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Arsenal</td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>4</td>
+                            <td>18</td>
+                            <td>8</td>
+                            <td>+10</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tottenham Hotspur</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>-1</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Brighton & Hove Albion</td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>13</td>
+                            <td>11</td>
+                            <td>+2</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Liverpool</td>
+                            <td>9</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>10</td>
+                            <td>13</td>
+                            <td>-3</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Aston Villa</td>
+                            <td>9</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>14</td>
+                            <td>-6</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>West Ham United</td>
+                            <td>9</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>9</td>
+                            <td>16</td>
+                            <td>-7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Leicester City</td>
+                            <td>9</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>15</td>
+                            <td>-8</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Crystal Palace</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>14</td>
+                            <td>-9</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Everton</td>
+                            <td>9</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>19</td>
+                            <td>-13</td>
+                            <td>5</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="small text-muted">Standings source: WSL official tables / ESPN. For full table: <a class="footer-link" href="https://www.thefa.com/competitions/womens-super-league/tables" target="_blank" rel="noopener">The FA — WSL</a></p>
+                </div>
+            </div>
+
+            <!-- Top Scorers -->
+            <div class="card card-dark mb-4">
+                <div class="card-body">
+                    <h6 class="card-title">Top Scorers</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Khadija Shaw (Man City)</span>
+                                <strong>9</strong>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Alessia Russo (Arsenal)</span>
+                                <strong>7</strong>
+                            </div>
+                        </li>
+                        <li class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Mayra Ramírez (Chelsea)</span>
+                                <strong>6</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+</main>
+
+<footer class="site-footer text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href="index.html" class="footer-brand text-white text-decoration-none d-flex align-items-center">
+                    <img src="img/logo.svg" alt="Women's Football Scores logo" width="28" height="28" class="me-2">Women's Football Scores
+                </a>
+                <p class="small mt-2">Manually curated match data and league standings.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6>Quick links</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="subscribe.html">Subscribe</a></li>
+                    <li><a class="footer-link" href="contact.html">Contact</a></li>
+                    <li><a class="footer-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6>Legal</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Terms of Use</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-3 small">
+            &copy; 2025 Fernanda Somohano • Data: WSL / ESPN
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

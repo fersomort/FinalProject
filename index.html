@@ -1,0 +1,240 @@
+<!-- DEVELOPER: Fer Somohano, IS117-xxx, Fall 2025 -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Women's Football Scores — Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+<!-- NAVBAR: Gradient style -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gradient">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.svg" alt="Women's Football Scores logo" width="36" height="36" class="me-2">
+            <span>Women's Football Scores</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMain">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                <!-- Leagues dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="leaguesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leagues</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="leaguesDropdown">
+                        <li><a class="dropdown-item" href="champions-league.html">UEFA Women's Champions League</a></li>
+                        <li><a class="dropdown-item" href="liga-f.html">Liga F</a></li>
+                        <li><a class="dropdown-item" href="wsl.html">WSL</a></li>
+                        <li><a class="dropdown-item" href="liga-mx-femenil.html">Liga MX Femenil</a></li>
+                        <li><a class="dropdown-item" href="nwsl.html">NWSL</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero text-center text-white py-5">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Live Women's Football — Scores, Fixtures & Standings</h1>
+        <p class="lead mb-3">Follow live matches across Champions League, Liga F, WSL, Liga MX Femenil and the NWSL.</p>
+        <a class="btn btn-lg btn-primary" href="subscribe.html">Get match alerts</a>
+    </div>
+</header>
+
+<main class="container my-5">
+    <!-- Cards -->
+    <section class="row g-4">
+        <article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-dark">
+                <img src="img/card-uwcl.jpg" class="card-img-top" alt="UEFA Women's Champions League match action">
+                <div class="card-body">
+                    <h5 class="card-title">UEFA Women's Champions League</h5>
+                    <p class="card-text">Follow the Champions League fixtures, live scores and standings.</p>
+                    <a href="champions-league.html" class="stretched-link">Open UWCL hub</a>
+                </div>
+            </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-dark">
+                <img src="img/card-ligaf.jpg" class="card-img-top" alt="Liga F match action">
+                <div class="card-body">
+                    <h5 class="card-title">Liga F</h5>
+                    <p class="card-text">Standings, fixtures and where to watch Liga F.</p>
+                    <a href="liga-f.html" class="stretched-link">Open Liga F hub</a>
+                </div>
+            </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 card-dark">
+                <img src="img/card-wsl.jpg" class="card-img-top" alt="Women's Super League match action">
+                <div class="card-body">
+                    <h5 class="card-title">WSL</h5>
+                    <p class="card-text">Women's Super League scores, news and table.</p>
+                    <a href="wsl.html" class="stretched-link">Open WSL hub</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="row g-4 mt-1">
+        <article class="col-12 col-md-6">
+            <div class="card card-dark h-100">
+                <img src="img/card-ligamx.jpg" class="card-img-top" alt="Liga MX Femenil match action">
+                <div class="card-body">
+                    <h5 class="card-title">Liga MX Femenil</h5>
+                    <p class="card-text">Mexico's top women's league — fixtures, scores and highlights.</p>
+                    <a href="liga-mx-femenil.html" class="stretched-link">Open Liga MX Femenil hub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-12 col-md-6">
+            <div class="card card-dark h-100">
+                <img src="img/card-nwsl.jpg" class="card-img-top" alt="NWSL match action">
+                <div class="card-body">
+                    <h5 class="card-title">NWSL</h5>
+                    <p class="card-text">National Women's Soccer League — live & upcoming matches.</p>
+                    <a href="nwsl.html" class="stretched-link">Open NWSL hub</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Recent Matches Section -->
+    <section class="mt-5">
+        <h2 class="text-white mb-3">Recent & Upcoming Matches</h2>
+        <p class="text-muted">Latest results from women's football leagues worldwide</p>
+
+        <div class="list-group">
+            <!-- UWCL Match -->
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <img src="img/arsenal.png" alt="Arsenal logo" width="35" height="35" class="me-2">
+                        <div>
+                            <div class="fw-semibold text-white">Arsenal WFC <span class="text-muted">vs</span> Olympique Lyonnais Féminin <img src="img/lyon.png" alt="Lyon logo" width="35" height="35"> </div>
+                            <div class="small text-muted">Nov 19, 2025 • UEFA Women's Champions League</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-end me-2">
+                            <div class="fs-5"><strong>2</strong> <span class="mx-1">—</span> <strong>2</strong></div>
+                            <div class="small text-muted">FT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liga F Match -->
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <img src="img/barcelona.png" alt="Barcelona logo" width="35" height="35" class="me-2">
+                        <div>
+                            <div class="fw-semibold text-white">FC Barcelona Femení <span class="text-muted">vs</span> Real Madrid Femenino <img src="img/real-madrid.png" alt="Real Madrid logo" width="35" height="35"></div>
+                            <div class="small text-muted">Nov 15, 2025 • Liga F</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-end me-2">
+                            <div class="fs-5"><strong>4</strong> <span class="mx-1">—</span> <strong>0</strong></div>
+                            <div class="small text-muted">FT</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- WSL Match -->
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <img src="img/chelsea.png" alt="Chelsea logo" width="35" height="35" class="me-2">
+                        <div>
+                            <div class="fw-semibold text-white">Chelsea FC Women <span class="text-muted">vs</span> Arsenal WFC <img src="img/arsenal.png" alt="Arsenal logo" width="35" height="35"></div>
+                            <div class="small text-muted">Nov 23, 2025 • WSL</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-end me-2">
+                            <div class="fs-5"><strong>0</strong> <span class="mx-1">—</span> <strong>1</strong></div>
+                            <div class="small text-muted">FT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Match -->
+            <div class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center flex-grow-1">
+                        <img src="img/man-city.png" alt="Man City logo" width="35" height="35" class="me-2">
+                        <div>
+                            <div class="fw-semibold text-white">Manchester City WFC <span class="text-muted">vs</span> Liverpool FC Women <img src="img/liverpool.png" alt="Liverpool logo" width="35" height="35"></div>
+                            <div class="small text-muted">Nov 24, 2025 • 4:30 PM EST • WSL</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="text-end me-2">
+                            <div class="fs-5"><span class="text-muted">—</span></div>
+                            <div class="small text-muted">Upcoming</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="small text-muted mt-3">Match data updated manually. Times shown in EST.</p>
+    </section>
+</main>
+
+<footer class="site-footer text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <a href="index.html" class="footer-brand text-white text-decoration-none d-flex align-items-center">
+                    <img src="img/logo.svg" alt="Women's Football Scores logo" width="28" height="28" class="me-2">Women's Football Scores
+                </a>
+                <p class="small mt-2">Manually curated match data and league standings.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6>Quick links</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="subscribe.html">Subscribe</a></li>
+                    <li><a class="footer-link" href="contact.html">Contact</a></li>
+                    <li><a class="footer-link" href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h6>Legal</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Terms of Use</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-3 small">
+            &copy; 2025 Fernanda Somohano • IS117 Project • Data: Manual Entry
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
