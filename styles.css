@@ -1,4 +1,4 @@
-/* DEVELOPER: Fer Somohano, IS117-xxx, Fall 2025 */
+/* DEVELOPER: Fernanda Somohano, IS117-001, Fall 2025 */
 /* Readable dark theme - white text and larger sizes for accessibility
    Navbar style: gradient */
 
@@ -161,7 +161,6 @@ li {
     border-radius: 12px;
     background-color: inherit;   /* matches the page */
 }
-
 
 .hero h1,
 .hero p {

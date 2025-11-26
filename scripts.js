@@ -1,4 +1,4 @@
-/* DEVELOPER: Fer Somohano, IS117-xxx, Fall 2025
+/* DEVELOPER: Fernanda Somohano, IS117-001, Fall 2025
    scripts.js - Form handling and interactive elements
    This is a simplified version without API calls - all data is manually managed
 */
@@ -53,7 +53,7 @@ function handleSubscribe(event) {
     // Show success message
     const messageEl = document.getElementById('subscribeMsg');
     if (messageEl) {
-        messageEl.textContent = `Thank you, ${name}! You've subscribed to updates (demo mode - no actual email sent).`;
+        messageEl.textContent = `Thank you, ${name}! You've subscribed to updates (demo mode - no email sent).`;
         messageEl.classList.remove('d-none');
 
         // Hide message after 5 seconds
